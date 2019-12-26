@@ -1,0 +1,93 @@
+/* Fonts */
+
+@font-face {
+	font-family: 'Circle-Regular';
+	src: url('../fonts/Circle-Regular.eot');
+	src: local('☺'), url('../fonts/Circle-Regular.woff') format('woff'), url('../fonts/Circle-Regular.ttf') format('truetype'), url('../fonts/Circle-Regular.svg') format('svg');
+	font-weight: '400';
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circe-Light';
+	src: url('../fonts/CRC35.eot');
+	src: local('☺'), url('fonts/CRC35.woff') format('woff'), url('../fonts/CRC35.ttf') format('truetype'), url('../fonts/CRC35.svg') format('svg');
+	font-weight: '300';
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circe-Bold';
+	src: url('../fonts/CRC65.eot');
+	src: local('☺'), url('../fonts/CRC65.woff') format('woff'), url('../fonts/CRC65.ttf') format('truetype'), url('../fonts/CRC65.svg') format('svg');
+	font-weight: '700';
+	font-style: normal;
+}
+
+/* -- Fonts -- */
+
+
+
+
+html {
+	box-sizing: border-box;
+}
+*, *:after, *:before {
+	box-sizing: inherit;
+	border: 0;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.content_inner {
+	display: flex;
+	justify-content: space-between;
+}
+.content_inner_right,
+.content_inner_left {
+	display: flex;
+}
+.header {
+	min-height: 85px;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	padding: 15px 0;
+}
+.content_inner_left_title {
+	width: 151px;
+	height: 31px;
+	color: #001e28;
+	font-family: 'Circle-Regular';
+	font-size: 15px;
+	line-height: 17px;
+	margin: 18px 0px 0px 25px;
+}
+.content_inner_right_question {
+	color: #001e28;
+	font-family: 'Circe-Light';
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+.content_inner_right_tel {
+	width: 151px;
+	height: 38px;
+	color: #001e28;
+	font-family: "Roboto";
+	font-size: 17px;
+	font-weight: 700;
+	margin-right: 30px;
+}
+.content_inner_right_btns button {
+	width: 170px;
+	height: 45px;
+	border-radius: 23px;
+	background-color: #ffaf02;
+	color: #ffffff;
+	font-family: 'Circe-Bold';
+	font-size: 11px;
+	text-align: center;
+	padding: 18px 0;
+	margin-top: 11px;
+}
