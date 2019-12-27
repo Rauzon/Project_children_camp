@@ -25,8 +25,6 @@
 /* -- Fonts -- */
 
 
-
-
 html {
 	box-sizing: border-box;
 }
@@ -54,6 +52,7 @@ html {
 	width: 100%;
 	background-color: #fff;
 	padding: 15px 0;
+	z-index: 10;
 }
 .content_inner_left_title {
 	width: 151px;
@@ -91,3 +90,83 @@ html {
 	padding: 18px 0;
 	margin-top: 11px;
 }
+.advantage {
+	min-height: 685px;
+	height: 100%;
+	width: 100%;
+	background-image: url(/images/advantage_fon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 110px 0px 90px;
+}
+.advantage_content_title {
+	color: #001e28;
+	font-family: "Roboto";
+	font-size: 57px;
+	font-weight: 700;
+	line-height: 118px;
+}
+.advantage_content_subtitle {
+	max-width: 445px;
+	color: #00222d;
+	font-family: "Roboto";
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	margin-bottom: 70px;
+	text-align: left;
+}
+.advantage_content_texts {
+	color: #001e28;
+	font-family: 'Circe-Bold';
+	line-height: 22px;
+	padding-left: 80px;
+}
+.advantage_content_text:nth-child(2) {
+	margin: 30px 0;
+}
+.advantage_content_text-bottom {
+	color: #001e28;
+	font-family: 'Circe-Light';
+	font-size: 14px;
+	line-height: 20px;
+}
+.advantage_content_text-top {
+	max-width: 460px;
+	width: 100%;
+}
+.advantage_content_text-top.last {
+	max-width: 295px;
+	width: 100%;
+}
+.advantage_content_text {
+	position: relative;
+}
+.advantage_content_text:nth-child(1):before {
+	content: '';
+	width: 50px;
+	height: 50px;
+	background-image: url(/images/shield_adv.png);
+	position: absolute;
+	transform: translateX(-160%);
+}
+.advantage_content_text:nth-child(2):before {
+	content: '';
+	width: 50px;
+	height: 50px;
+	background-image: url(/images/wallet_adv.png);
+	position: absolute;
+	transform: translateX(-160%);
+}
+.advantage_content_text:nth-child(3):before {
+	content: '';
+	width: 50px;
+	height: 50px;
+	background-image: url(/images/girl_adv.png);
+	position: absolute;
+	transform: translateX(-160%);
+}
+
+
