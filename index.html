@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link rel="stylesheet" href="/css/slick.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/normalize.css">
     <title>Document</title>
 </head>
 <body>
@@ -39,7 +42,9 @@
                     </div>
                     <!-- /.content_inner_right_contacts -->
                     <div class="content_inner_right_btns">
-                        <button class="content_inner_right_btn">ОБРАТНЫЙ ЗВОНОК</button>
+                        <button class="content_inner_right_btn" data-fancybox data-src="#modal" href="javascript:;" class="btn btn-primary">
+                            ОБРАТНЫЙ ЗВОНОК
+                        </button>
                     </div>
                     <!-- /.content_inner_right_btn -->
                 </div>
@@ -132,7 +137,9 @@
                         </div>
                         <!-- /.consultation_content-form-tel -->
                         <div class="consultation_content-form-btn">
-                            <button>Получить консультацию</button>
+                            <button>
+                                Получить консультацию
+                            </button>
                         </div>
                         <!-- /.consultation_content-form-btn -->
                     </div>
@@ -277,11 +284,112 @@
         <!-- /.container -->
     </section>
     <!-- /.catalog -->
+    <section class="offer">
+        <div class="container">
+            <div class="offer_special">
+                <div class="offer_special-title">
+                    Специальное предложение - успевайте забронировать!
+                </div>
+                <!-- /.offer_special-title -->
+                <div class="offer_special-subtitle">
+                    Путевка в детский оздоровительный лагерь "Лазуревый берег"
+                </div>
+                <!-- /.offer_special-subtitle -->
+                <div class="offer_special-subtitle-before">
+                    на 18 дней всего 
+                </div>
+                <!-- /.offer_special-subtitle-before -->
+                <div data-slick='{"slidesToShow": 4, "slidesToScroll": 1}' class="offer_special-slider">
+                    <div><img src="/images/offer_slider1.png" alt=""></div>
+                    <div><img src="/images/offer_slider2.png" alt=""></div>
+                    <div><img src="/images/offer_slider3.png" alt=""></div>
+                    <div><img src="/images/offer_slider4.png" alt=""></div>
+                    <div><img src="/images/offer_slider4.png" alt=""></div>
+                </div>
+                <!-- /.offer_special-slider -->
+            </div>
+            <!-- /.offer_special -->
+        </div>
+        <!-- /.container -->
+        <div class="offer_consultation">
+            <div class="container">
+                <div class="offer_consultation-inner">
+                    <div class="offer_consultation-inner-content">
+                        <div class="offer_consultation-title">
+                            Получите полную информацию о путевке от наших специалистов
+                        </div>
+                        <!-- /.offer_consultation-title -->
+                        <div class="offer_consultation-text">
+                            Для этого заполните форму ниже - мы перезвоним Вам за 60 секунд
+                        </div>
+                        <!-- /.offer_consultation-text -->
+                        <form>
+                            <div class="offer_consultation-form">
+                                <div class="offer_consultation-form-name">
+                                    <input type="text" placeholder="Ваше имя">
+                                </div>
+                                <!-- /.offer_consultation-form-name -->
+                                <div class="offer_consultation-form-tel">
+                                    <input type="text" placeholder="Ваш телефон">
+                                </div>
+                                <!-- /.offer_consultation-form-tel -->
+                                <div class="offer_consultation-form-btn">
+                                    <button>Получить консультацию</button>
+                                </div>
+                                <!-- /.offer_consultation-form-btn -->
+                            </div>
+                            <!-- /.offer_consultation-form -->
+                        </form>
+                        <div class="offer_consultation-contact">
+                            <div class="offer_consultation-contact-text">
+                                или перезвоните нам по телефону:
+                            </div>
+                            <!-- /.offer_consultation-contact-text -->
+                            <div class="offer_consultation-contact-tel">
+                                +7 (8182) 20-80-10
+                            </div>
+                            <!-- /.offer_consultation-contact-tel -->
+                        </div>
+                        <!-- /.offer_consultation-contact -->
+                    </div>
+                    <!-- /.offer_consultation-inner-content -->
+                </div>
+                <!-- /.offer_consultation-inner -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.offer_consultation -->
+    </section>
+    <!-- /.offer -->
 
 
 
     
+
+<!-- modal window -->
+   
+    <div id="modal">
+        <h2>Мы свяжемся с Вами!</h2>
+        <h4>Введите данные</h4>
+        <div class="modal_name">
+            <input placeholder="Ваше имя">
+        </div>
+        <!-- /.modal_name -->
+        <div class="modal_tel">
+            <input placeholder="Ваш телефон">
+        </div>
+        <!-- /.modal_tel -->
+        <div class="modal_btn">
+            <button>Отправить</button>
+        </div>
+        <!-- /.modal_btn -->
+      </div>
+<!--/// modal window-->
+
     <script src="/js/jquery-3.4.1.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.fancybox.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>
