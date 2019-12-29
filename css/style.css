@@ -179,7 +179,8 @@ html {
 	padding: 100px 0;
 }
 .consultation_content-title,
-.offer_consultation-title {
+.offer_consultation-title,
+.share_bottom-title {
 	color: #001e28;
 	font-family: "Roboto";
 	font-size: 30px;
@@ -205,7 +206,8 @@ html {
 	margin-top: 75px;
 }
 .consultation_content-text,
-.offer_consultation-text {
+.offer_consultation-text,
+.share_bottom-text {
 	color: #001e28;
 	font-family: 'Circe-Light';
 	font-size: 16px;
@@ -214,7 +216,8 @@ html {
 	text-align: center;
 }
 .consultation_content-form,
-.offer_consultation-form {
+.offer_consultation-form,
+.share_bottom-form {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 45px;
@@ -224,13 +227,17 @@ html {
 .consultation_content-form-btn button,
 .offer_consultation-form-name input,
 .offer_consultation-form-tel input,
-.offer_consultation-form-btn button {
+.offer_consultation-form-btn button,
+.share_bottom-form-name input,
+.share_bottom-form-tel input,
+.share_bottom-form-btn button {
 	width: 270px;
 	height: 55px;
 	border-radius: 28px;
 }
 .consultation_content-form-name input,
-.offer_consultation-form-name input {
+.offer_consultation-form-name input,
+.share_bottom-form-name input {
 	border: 1px solid #d1d1d1;
 	background-color: #ffffff;
 	padding-left: 60px;
@@ -241,7 +248,8 @@ html {
 	position: relative;
 }
 .consultation_content-form-name:before,
-.offer_consultation-form-name::before {
+.offer_consultation-form-name::before,
+.share_bottom-form-name:before {
 	content: '';
 	width: 15px;
 	height: 18px;
@@ -253,7 +261,8 @@ html {
 	background-repeat: no-repeat;
 }
 .consultation_content-form-tel input,
-.offer_consultation-form-tel input{
+.offer_consultation-form-tel input,
+.share_bottom-form-tel input{
 	border: 1px solid #d1d1d1;
 	background-color: #ffffff;
 	padding-left: 60px;
@@ -265,7 +274,8 @@ html {
 	margin: 0 30px;
 }
 .consultation_content-form-tel:before,
-.offer_consultation-form-tel::before {
+.offer_consultation-form-tel::before,
+.share_bottom-form-tel::before {
 	content: '';
 	width: 15px;
 	height: 18px;
@@ -277,7 +287,8 @@ html {
 	background-repeat: no-repeat;
 }
 .consultation_content-form-btn button,
-.offer_consultation-form-btn button {
+.offer_consultation-form-btn button,
+.share_bottom-form-btn button {
 	color: #ffffff;
 	font-family: 'Circe-Bold';
 	font-size: 12px;
@@ -286,13 +297,15 @@ html {
 	background-color: #ffaf02;
 }
 .consultation_content-contact,
-.offer_consultation-contact {
+.offer_consultation-contact,
+.share_bottom-contact {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .consultation_content-contact-text,
-.offer_consultation-contact-text {
+.offer_consultation-contact-text,
+.share_bottom-contact-text {
 	color: #000;
 	font-family: 'Circe-Light';
 	font-size: 16px;
@@ -300,7 +313,8 @@ html {
 	margin-right: 30px;
 }
 .consultation_content-contact-tel,
-.offer_consultation-contact-tel {
+.offer_consultation-contact-tel,
+.share_bottom-contact-tel {
 	color: #001e28;
 	font-family: "Roboto";
 	font-size: 20px;
@@ -309,7 +323,8 @@ html {
 	position: relative;
 }
 .consultation_content-contact-tel:before,
-.offer_consultation-contact-tel::before {
+.offer_consultation-contact-tel::before,
+.share_bottom-contact-tel:before {
 	content: '';
 	width: 30px;
 	height: 30px;
@@ -484,6 +499,7 @@ html {
 	height: 100%;
 	background-color: #d8f0f0;
 	background: linear-gradient(-211deg, #d8f0f0 0%, #fdfde0 100%);
+	padding: 100px 0;
 }
 .offer_special-slider {
 	position: relative;
@@ -505,6 +521,197 @@ html {
 .slick-arrow {
 	z-index: 10;
 }
+.offer_special-title {
+	color: #001e28;
+	font-family: "Roboto";
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.offer_special-subtitle {
+	color: #001e28;
+	font-family: 'Circe-Bold';
+	font-size: 22px;
+	line-height: 41px;
+	text-align: center;
+}
+.offer_special-text {
+	color: #001e28;
+	font-family: 'Circe-Bold';
+	font-size: 22px;
+	line-height: 41px;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.offer_special-text:after {
+	content: 'за 25 800 рублей!';
+	color: #fff;
+	width: 189px;
+	height: 38px;
+	background-color: #ffaf02;
+	padding: 8px;
+}
+.offer_special-slider {
+	margin-bottom: 81px;
+}
+.offer_special-text-items {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 85px;
+}	
+.offer_special-text-item {
+	max-width: 227px;
+	width: 100%;
+	max-height: 45px;
+	width: 100%;
+	padding: 0 px;
+	color: #001e28;
+	font-family: 'Circle-Regular';
+	font-size: 20px;
+}
+.offer_special-text-item:nth-child(1) {
+	margin-left: 100px;
+	position: relative;
+}
+.offer_special-text-item:nth-child(1)::before{
+	content: '';
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	background-image: url(/images/sea_offer_before.png);
+	display: block;
+	transform: translate(-100px, -10px);
+}
+.offer_special-text-item:nth-child(2) {
+	position: relative;
+}
+.offer_special-text-item:nth-child(2)::before{
+	content: '';
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	background-image: url(/images/bed_offer_before.png);
+	transform: translate(-100px, -10px);
+}
+.offer_special-text-item:nth-child(3) {
+	margin-right: 65px;
+	position: relative;
+}
+.offer_special-text-item:nth-child(3)::before{
+	content: '';
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	background-image: url(/images/win_offer_before.png);
+	transform: translate(-100px, -10px);
+}
+.offer_consultation-inner-content {
+	min-height: 370px;
+	height: 100%;
+	border: 0px solid #d8f0f0;
+	background-image: url(/images/fon_offer_cons.png);
+	background-repeat: no-repeat;
+	padding:70px 0px 75px;
+}
+.offer_consultation-title {
+	font-size: 22px;
+	margin-bottom: -15px;
+}
+.offer_consultation-text {
+	margin-bottom: -5px;
+}
+.share {
+	min-height: 1100px;
+	height: 100%;
+	padding:100px 0;
+}
+.share_top_items {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 70px;
+
+}
+.share_top_item-left {
+	min-width: 570px;
+	width: 100%;
+	min-height: 430px;
+	height: 100%;
+	background-image: url(/images/share_top_item-left-inner.png);
+	background-repeat: no-repeat;
+}
+.share_top_item-left-inner {
+	width: 330px;
+	height: 450px;
+	margin-left: 125px;
+	border: 10px solid #d8f0f0;
+}
+.share_top_item-right {
+	margin-left: 30px;
+	padding-right: 91px;
+}
+.share_top_item-right-title {
+	color: #001e28;
+	font-family: "Roboto";
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 75px;
+}
+.share_top_item-right-text {
+	color: #001e28;
+	font-family: 'Circle-Regular';
+	font-size: 20px;
+	margin-bottom: 72px;
+	padding-right: 72px;
+}
+.share_top_item-right-subtitle {
+	color: #001e28;
+	font-family: 'Circe-Bold';
+	font-size: 22px;
+	margin-bottom: 32px;
+	padding-right: 144px;
+}
+.share_top_item-right-subtitle-text {
+	color: #001e28;
+	font-family: 'Circle-Regular';
+	font-size: 20px;
+}
+.share_bottom-title {
+	font-size: 22px;
+}
+
+.share_bottom-inner-content {
+	min-height: 397px;
+	height: 100%;
+	border: 0px solid #d8f0f0;
+	background-image: url(/images/share_fon.png);
+	background-repeat: no-repeat;
+	padding:70px 0px;
+}
+.share_bottom-text {
+	text-align: center;
+	padding: 30px 0px 5px 0px;
+
+}
+.share_bottom-text-btm {
+	color: #001e28;
+	font-family: 'Circe-Light';
+	font-size: 16px;
+	line-height: 27px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 #modal {
@@ -529,7 +736,6 @@ html {
 .modal_btn button {
 	background-color: #ffaf02;
 }
-
 
 
 
