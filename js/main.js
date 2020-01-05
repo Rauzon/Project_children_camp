@@ -3,8 +3,29 @@ $('.offer_special-slider').slick({
         speed : 1000,
         infinite : true,
         slidesToScroll: 1,
-        prevArrow: "<img src='/images/arrow-left-offer.png' class='prev' alt='1'>",
-        nextArrow: "<img src='/images/arrow_right_offer.png' class='next' alt='2'>",
+        prevArrow: "<img src='../images/arrow-left-offer.png' class='prev' alt='1'>",
+        nextArrow: "<img src='../images/arrow_right_offer.png' class='next' alt='2'>",
+    });
+
+    // slider in prev pre-last block 
+
+    $('.awards_special-slider').slick({
+        speed : 800,
+        infinite : true,
+        slidesToScroll: 1,
+        variableWidth: true,
+        row : 2,
+        prevArrow: "<img src='../images/keyboard-left-arrow-awards.png' class='awards_prev' alt='1'>",
+        nextArrow: "<img src='../images/keyboard-right-arrow-awards.png' class='awards_next' alt='2'>",
+    });
+
+    $('.awards_btm_special-slider').slick({
+        speed : 800,
+        infinite : true,
+        slidesToScroll: 1,
+        variableWidth: true,
+        prevArrow: "<img src='/images/arrow-left-offer.png' class='awards_prev' alt='1'>",
+        nextArrow: "<img src='/images/arrow_right_offer.png' class='awards_next' alt='2'>",
     });
 
 // increase the picture
